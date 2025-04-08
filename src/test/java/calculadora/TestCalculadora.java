@@ -76,5 +76,4 @@ class TestCalculadora {
         //Premissa verifica se os valores são iguais
         assertEquals(retornoEsperado, retornoFeito, 0);
     }
-    
 }
