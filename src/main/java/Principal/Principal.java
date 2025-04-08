@@ -1,21 +1,19 @@
-package Principal;
+package principal;
 
 import calculadora.Calculadora;
 import javax.swing.JOptionPane;
 
-public class principal {
+public class Principal {
 
     public static void main(String[] args) {
         String opcao = "";
         Calculadora calculadora = new Calculadora();
         while (!opcao.equals("9")) {
             opcao = JOptionPane.showInputDialog("1 - Leitura \n2 - Adicao\n3 - Subtracao \n4 - Multiplicação \n5 - Divisao \n6 - Exponencial \n9 - Sair");
-switch (Integer.parseInt(opcao)) {
+            switch (Integer.parseInt(opcao)) {
                 case 1:
-                    calculadora.setValorA(Double.parseDouble(JOptionPane.
-                            showInputDialog("Digite o valor A")));
-                    calculadora.setValorB(Double.parseDouble(JOptionPane.
-                            showInputDialog("Digite o valor B")));
+                    calculadora.setValorA(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor A")));
+                    calculadora.setValorB(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor B")));
                     break;
                 case 2:
                     JOptionPane.showMessageDialog(null, "Soma: " + calculadora.getSoma());
